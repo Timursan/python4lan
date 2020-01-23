@@ -19,15 +19,15 @@
 '''
 ip = '192.168.3.1'
 
-#Вариант 1
+# Вариант 1
 
 ip = ip.split('.')
-print("{:<10} {:<10} {:<10} {:<10}".format(ip[0],ip[1],ip[2],ip[3]))
-print("{:<10b} {:<10b} {:<10b} {:<10b}".format(int(ip[0]),int(ip[1]),int(ip[2]),int(ip[3])))
+print("{:<10} {:<10} {:<10} {:<10}".format(ip[0], ip[1], ip[2], ip[3]))
+print("{:<10b} {:<10b} {:<10b} {:<10b}".format(int(ip[0]), int(ip[1]), int(ip[2]), int(ip[3])))
 
-#Вариант 2
+# Вариант 2
 template = '''
 {0:<10} {1:<10} {2:<10} {3:<10}
 {0:010b} {1:010b} {2:010b} {3:010b}
 '''
-print(template.format(int(ip[0]),int(ip[1]),int(ip[2]),int(ip[3])))
+print(template.format(int(ip[0]), int(ip[1]), int(ip[2]), int(ip[3])))
