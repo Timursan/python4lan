@@ -12,4 +12,12 @@
 mac = 'AAAA:BBBB:CCCC'
 mac=mac.replace(':','')
 print("{0:b}".format(int(mac,16)))
+#print(bin(mac,16))
+#Альтернативный вариант решения задачки
+
+MAC = MAC.replace(':','')
+MAC = int(MAC, 16)
+MAC = bin(MAC)
+
+print(MAC)
 
